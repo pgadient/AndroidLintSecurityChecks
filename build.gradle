@@ -1,0 +1,44 @@
+group 'Test'
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    google()
+    jcenter()
+}
+
+ext {
+    lintVersion = '26.1.2'
+    home = System.getProperty("user.home")
+}
+
+dependencies {
+    compile "com.android.tools.lint:lint-api:$lintVersion"
+    compile "com.android.tools.lint:lint-checks:$lintVersion"
+    testCompile 'junit:junit:4.11'
+    testCompile "com.android.tools.lint:lint:$lintVersion"
+    testCompile "com.android.tools.lint:lint-tests:$lintVersion"
+    testCompile "com.android.tools:testutils:$lintVersion"
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:deprecation"
+}
+
+jar {
+    manifest {
+        attributes("Lint-Registry": "lint.AndroidLintSecurityRegistry")
+    }
+    
+    
+}
+
+task deploy (dependsOn: assemble, type: Copy) {
+    from "build/libs"
+    into "${System.properties['user.home']}${File.separator}.android${File.separator}lint"
+}
+
+defaultTasks 'assemble', 'deploy'
