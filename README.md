@@ -2,6 +2,8 @@
 
 A lightweight static analysis tool on top of Android Lint that analyzes the code under development and provides *just-in-time* feedback within the **latest** Android Studio IDE about the presence of security smells in the code. Moreover, this tool supports *batch processing* for large scale app analysis.
 
+> This is the accompanying material for our publication titled “Security Code Smells in Android ICC”.
+
 ## Build
 Import the project in Eclipse Java (untested in other IDEs) and create a run configuration that consists of the Gradle tasks `assemble`and `deploy`. By execution of these tasks the .jar file will get compiled and copied into the appropriate Android Studio directory (if existent). The tool is ready to use after completion.
 
