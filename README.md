@@ -19,7 +19,7 @@ Android Studio will now detect just-in-time the smells in the code and lint them
 The following ICC Security Code Smells are implemented:
 
 Id|ICC Security Code Smell|Brief Description
-:-:|-|-
+:-:|:-:|-
 SM01|Persisted Dynamic Permission|URI permissions granted through the context class have to be revoked explicitly
 SM02|Custom Scheme Channel|Avoid using custom URI schemes
 SM03|Incorrect Protection Level|The `android:protectionLevel` attribute is missing for a custom permission
