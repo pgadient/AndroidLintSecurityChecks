@@ -1,4 +1,4 @@
-# AndroidLintExtension
+# AndroidLintSecurityChecks
 
 A lightweight static analysis tool on top of Android Lint that analyzes the code under development and provides *just-in-time* feedback within the **latest** Android Studio IDE about the presence of security smells in the code. Moreover, this tool supports *batch processing* for large scale app analysis.
 
