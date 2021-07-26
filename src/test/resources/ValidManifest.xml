@@ -1,3 +1,4 @@
+<!-- Copyright (c) Pascal Gadient et al. All rights reserved. Licensed under the MIT License. See LICENSE.txt in the project root for the license information.-->
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.test.myapplication3">

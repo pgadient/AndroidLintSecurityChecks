@@ -1,5 +1,9 @@
-package lint;
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Pascal Gadient et al. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE.txt in the project root for the license information.
+ *--------------------------------------------------------------------------------------------*/
 
+package lint;
 
 import com.android.annotations.NonNull;
 import com.android.annotations.VisibleForTesting;
